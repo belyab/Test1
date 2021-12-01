@@ -10,9 +10,10 @@ public class AjaxServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, IOException {
 
-        String garagNumb = req.getParameter("garagNumb");
+//        String garagNumb = req.getParameter("garagNumb");
+        String dataAboutBus = new HttpClientParsData().getDataAboutBus("2175");
 
-        String dataAboutBus = new HttpClientParsData().getDataAboutBus(garagNumb);
+//        String dataAboutBus = new HttpClientParsData().getDataAboutBus(garagNumb);
 
         resp.setContentType("text/plain");
         resp.setCharacterEncoding("UTF-8");

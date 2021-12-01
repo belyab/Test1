@@ -12,7 +12,7 @@ public class HttpClientParsData {
         String beginUrl = "http://data.kzn.ru:8082/api/v0/dynamic_datasets/bus/" + garagNumb + ".json";
 
         try {
-            URL url = new URL(beginUrl);
+            URL url = new URL("http://data.kzn.ru:8082/api/v0/dynamic_datasets/bus.json");
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
