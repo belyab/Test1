@@ -13,9 +13,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
         $(document).on("click", "#ajax-button", function () {
-            alert("alert1");
             $.get("/getData", function (responseText) {
-                alert("alert2");
                 $("#ajax-div").text(responseText);
             });
         });
